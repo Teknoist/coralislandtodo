@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coral Island #6 → Yeni Bölüm Todo Listesi</title>
+  <meta name="description" content="Coral Island #6 (HAYVAN FESTİVALİNDE YARIŞTIK!) videosunun yorumlarından çıkarılan, yeni bölümde yapılması önerilen görevler + wiki rehberi." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="logo">
+        <span class="logo__emoji">🏝️</span>
+        <div>
+          <h1 class="logo__title">Coral Island <span>TODO</span></h1>
+          <p class="logo__sub">Bölüm #6 yorumlarından çıkan görev listesi</p>
+        </div>
+      </div>
+      <a class="video-link" href="https://www.youtube.com/watch?v=PDgkopX9vSA" target="_blank" rel="noopener">
+        ▶ Videoyu izle
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-card">
+        <div class="hero-card__text">
+          <span class="badge">📺 Coral Island #6</span>
+          <h2 class="hero-title">"HAYVAN FESTİVALİNDE YARIŞTIK !"</h2>
+          <p class="hero-meta">H1vezZz (Alp Kocaman) · 14.935 görüntülenme · 59 yorum</p>
+          <p class="hero-desc">
+            Bu sayfa, videonun <strong>tüm yorumlarını</strong> analiz edip izleyicilerin yeni bölümde yapılmasını
+            istediği görevleri listeler. Her görev, <strong>Coral Island Wiki</strong>'den alınan bilgiler ve görsellerle desteklenmiştir.
+          </p>
+        </div>
+        <div class="hero-card__stats">
+          <div class="stat"><span class="stat__num" id="statDone">0</span><span class="stat__label">Tamamlanan</span></div>
+          <div class="stat"><span class="stat__num" id="statTotal">19</span><span class="stat__label">Toplam görev</span></div>
+          <div class="stat"><span class="stat__num">5</span><span class="stat__label">Başlık</span></div>
+        </div>
+      </div>
+      <div class="progress"><div class="progress__bar" id="progressBar"></div></div>
+    </div>
+  </section>
+
+  <!-- Todo list -->
+  <main class="wrap todo-list" id="todoList">
+
+    <!-- 1. Artisan -->
+    <section class="todo-card" id="card-artisan">
+      <div class="todo-card__head">
+        <div class="todo-card__icon">🧀</div>
+        <div class="todo-card__title">
+          <h3>Zanaat Ürünleri Yap</h3>
+          <span class="source">Öneren: <a href="https://www.youtube.com/watch?v=PDgkopX9vSA" target="_blank" rel="noopener">@Artceng</a> · 13 👍</span>
+        </div>
+        <a class="wiki-link" href="https://coralisland.wiki/wiki/Artisan_product" target="_blank" rel="noopener">Wiki ↗</a>
+      </div>
+      <div class="todo-card__body">
+        <p class="todo-card__lead">Peynir, tereyağı, bal ve kumaş gibi ürünleri işleyip çiftlikten daha çok para kazan.</p>
+
+        <div class="artisan-grid">
+          <div class="artisan-item" data-task="peynir">
+            <img src="assets/img/cheese.png" alt="Peynir" loading="lazy" />
+            <div class="artisan-item__info">
+              <strong>Peynir</strong>
+              <span>Cheese press · Ranching lvl 4</span>
+            </div>
+          </div>
+          <div class="artisan-item" data-task="tereyagi">
+            <img src="assets/img/butter.png" alt="Tereyağı" loading="lazy" />
+            <div class="artisan-item__info">
+              <strong>Tereyağı</strong>
+              <span>Mason jar · Farming lvl 3</span>
+            </div>
+          </div>
+          <div class="artisan-item" data-task="bal">
+            <img src="assets/img/honey.png" alt="Bal" loading="lazy" />
+            <div class="artisan-item__info">
+              <strong>Bal</strong>
+              <span>Bee house · Catching lvl 3</span>
+            </div>
+          </div>
+          <div class="artisan-item" data-task="kumas">
+            <img src="assets/img/loom.png" alt="Kumaş" loading="lazy" />
+            <div class="artisan-item__info">
+              <strong>Kumaş</strong>
+              <span>Loom · Ranching lvl 6</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="subtasks">
+          <label class="task"><input type="checkbox" data-task="peynir" /> <span>Peynir üret (Cheese press: Ahşap 30, Hurda 30, Bronz 2, Gümüş 2)</span></label>
+          <label class="task"><input type="checkbox" data-task="tereyagi" /> <span>Tereyağı üret (Mason jar: Ahşap 30, Cam 12)</span></label>
+          <label class="task"><input type="checkbox" data-task="bal" /> <span>Bal üret (Bee house: Ahşap 50, Bronz cevheri 15)</span></label>
+          <label class="task"><input type="checkbox" data-task="kumas" /> <span>Kumaş üret (Loom: Hurda 25, Ahşap 30, Altın 5)</span></label>
+          <label class="task"><input type="checkbox" data-task="keg" /> <span>Keg yap → içecek/şarap (Farming lvl 6)</span></label>
+        </div>
+
+        <details class="wiki-detail">
+          <summary>📖 Wiki'den: Makineler ve malzemeler</summary>
+          <div class="machine-list">
+            <div class="machine"><img src="assets/img/cheese-press.png" alt="Cheese press" loading="lazy" /><div><strong>Cheese press</strong><span>Ahşap×30, Hurda×30, Bronz bar×2, Gümüş bar×2</span></div></div>
+            <div class="machine"><img src="assets/img/bee-house.png" alt="Bee house" loading="lazy" /><div><strong>Bee house</strong><span>Ahşap×50, Bronz cevheri×15</span></div></div>
+            <div class="machine"><img src="assets/img/loom.png" alt="Loom" loading="lazy" /><div><strong>Loom</strong><span>Hurda×25, Ahşap×30, Altın bar×5</span></div></div>
+            <div class="machine"><img src="assets/img/keg.png" alt="Keg" loading="lazy" /><div><strong>Keg</strong><span>Ahşap×30, Bronz bar×2, Gümüş bar×1, Hurda×20</span></div></div>
+          </div>
+          <p class="wiki-note">Zanaat ürünleri, ham malzemelerinden daha pahalıya satılır. Kalite, girdi kalitesine bağlıdır.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- 2. Lake Temple -->
+    <section class="todo-card" id="card-temple">
+      <div class="todo-card__head">
+        <div class="todo-card__icon">⛩️</div>
+        <div class="todo-card__title">
+          <h3>Tanrıça Adaklarını Tamamla</h3>
+          <span class="source">Öneren: <a href="https://www.youtube.com/watch?v=PDgkopX9vSA" target="_blank" rel="noopener">@Artceng</a> · 13 👍</span>
+        </div>
+        <a class="wiki-link" href="https://coralisland.wiki/wiki/Lake_Temple" target="_blank" rel="noopener">Wiki ↗</a>
+      </div>
+      <div class="todo-card__body">
+        <p class="todo-card__lead">Gölün ortasındaki tapınakta 4 altar var; adakları tamamlayıp adayı iyileştir ve ödüller kazan.</p>
+        <div class="temple-layout">
+          <img class="temple-img" src="assets/img/offering-resources.png" alt="Adak örneği" loading="lazy" />
+          <div class="subtasks">
+            <label class="task"><input type="checkbox" data-task="altar-crop" /> <span><strong>Crop Altar</strong> — mahsul + kaynak adakları (6 adak)</span></label>
+            <label class="task"><input type="checkbox" data-task="altar-catch" /> <span><strong>Catch Altar</strong> — balık + böcek adakları (6 adak)</span></label>
+            <label class="task"><input type="checkbox" data-task="altar-advanced" /> <span><strong>Advanced Altar</strong> — pişirme + hayvan adakları</span></label>
+            <label class="task"><input type="checkbox" data-task="altar-rare" /> <span><strong>Rare Altar</strong> — nadir eşya adakları</span></label>
+          </div>
+        </div>
+        <details class="wiki-detail">
+          <summary>📖 Wiki'den: Ödüller ve sıralama</summary>
+          <ul class="reward-list">
+            <li>1 adak → <strong>Hızlı seyahat</strong> (waypoint) + Catch Altar açılır</li>
+            <li>2 adak → <strong>Kaplıca (bath house)</strong> + Advanced Altar</li>
+            <li>6 adak → <strong>Orta orman</strong> erişimi</li>
+            <li>14 adak → <strong>Derin orman</strong> erişimi</li>
+            <li>18 adak → <strong>Savanna</strong> erişimi</li>
+            <li><strong>Crop Altar tamamlanınca → Sera (Greenhouse)</strong> 🌱</li>
+          </ul>
+          <p class="wiki-note">"Mythical Dream" görevi tamamlanınca adak yapılmaya başlanır. Her adak 45 heritage puanı verir.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- 3. Ling's Lab -->
+    <section class="todo-card" id="card-lab">
+      <div class="todo-card__head">
+        <div class="todo-card__icon">🔬</div>
+        <div class="todo-card__title">
+          <h3>Laboratuvarı Geliştir + Çiftliği Büyüt</h3>
+          <span class="source">Öneren: <a href="https://www.youtube.com/watch?v=PDgkopX9vSA" target="_blank" rel="noopener">@Artceng</a> · 13 👍</span>
+        </div>
+        <a class="wiki-link" href="https://coralisland.wiki/wiki/Lings_Lab" target="_blank" rel="noopener">Wiki ↗</a>
+      </div>
+      <div class="todo-card__body">
+        <div class="lab-layout">
+          <img class="lab-img" src="assets/img/lings-lab.png" alt="Ling'in Laboratuvarı" loading="lazy" />
+          <div>
+            <p class="todo-card__lead">Ling'in laboratuvarında tohum, fidan ve yem kalitesini yükselt — ürünlerin daha değerli olsun.</p>
+            <div class="subtasks">
+              <label class="task"><input type="checkbox" data-task="lab-tohum" /> <span>Tohum kalitesini yükselt (Bronz → Gümüş → Altın → Osmium)</span></label>
+              <label class="task"><input type="checkbox" data-task="lab-fidan" /> <span>Fidan/fidan kalitesini yükselt</span></label>
+              <label class="task"><input type="checkbox" data-task="lab-yem" /> <span>Hayvan yemi kalitesini yükselt</span></label>
+              <label class="task"><input type="checkbox" data-task="lab-fosil" /> <span>Fosil nodüllerini işlet (20 coin)</span></label>
+            </div>
+          </div>
+        </div>
+        <details class="wiki-detail">
+          <summary>📖 Wiki'den: Fiyatlar ve kelp özü</summary>
+          <p class="wiki-note">Yükseltmeler <strong>coin + kelp özü</strong> ile yapılır (kelp'i okyanustan toplarsın). Her yükseltme 2 gün sürer. Örn. Osmium tohum: 20.000 coin + 5 Osmium kelp özü.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- 4. Pet -->
+    <section class="todo-card" id="card-pet">
+      <div class="todo-card__head">
+        <div class="todo-card__icon">🐱</div>
+        <div class="todo-card__title">
+          <h3>Kedi Sahiplen</h3>
+          <span class="source">Öneren: <a href="https://www.youtube.com/watch?v=PDgkopX9vSA" target="_blank" rel="noopener">@gokcendalgic</a></span>
+        </div>
+        <a class="wiki-link" href="https://coralisland.wiki/wiki/Pet" target="_blank" rel="noopener">Wiki ↗</a>
+      </div>
+      <div class="todo-card__body">
+        <p class="todo-card__lead">Çiftliğe bir dost ekle! Sahiplenme ücretsiz ama önce Town Rank E + evcil hayvan yatağı gerekiyor.</p>
+        <div class="cat-grid">
+          <figure><img src="assets/img/cat-bast.jpg" alt="Bast" loading="lazy" /><figcaption>Bast</figcaption></figure>
+          <figure><img src="assets/img/cat-kitkat.jpg" alt="Kitkat" loading="lazy" /><figcaption>Kitkat</figcaption></figure>
+          <figure><img src="assets/img/cat-garykun.jpg" alt="Garykun" loading="lazy" /><figcaption>Garykun</figcaption></figure>
+          <figure class="cat-grid__center"><img src="assets/img/pet-center.png" alt="Sahiplenme merkezi" loading="lazy" /><figcaption>Sahiplenme merkezi</figcaption></figure>
+        </div>
+        <div class="subtasks">
+          <label class="task"><input type="checkbox" data-task="pet-rank" /> <span>Town Rank E'ye ulaş</span></label>
+          <label class="task"><input type="checkbox" data-task="pet-bed" /> <span>Evcil hayvan yatağı/evi satın al</span></label>
+          <label class="task"><input type="checkbox" data-task="pet-adopt" /> <span>Town Center'dan kediyi sahiplen (ücretsiz)</span></label>
+        </div>
+        <details class="wiki-detail">
+          <summary>📖 Wiki'den: Sahiplenme detayı</summary>
+          <p class="wiki-note">Seçenekler: kedi, köpek, tilki, kertenkele, tavşan. Başlangıçta 1 evcil hayvan; ev yükseltmeleriyle <strong>toplam 3'e kadar</strong>.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- 5. Spooky Festival -->
+    <section class="todo-card" id="card-spooky">
+      <div class="todo-card__head">
+        <div class="todo-card__icon">🎃</div>
+        <div class="todo-card__title">
+          <h3>Cadılar Bayramı (Spooky) Festivali</h3>
+          <span class="source">Öneren: <a href="https://www.youtube.com/watch?v=PDgkopX9vSA" target="_blank" rel="noopener">@Kate_613</a></span>
+        </div>
+        <a class="wiki-link" href="https://coralisland.wiki/wiki/Festival" target="_blank" rel="noopener">Wiki ↗</a>
+      </div>
+      <div class="todo-card__body">
+        <p class="todo-card__lead">Fall 28'de kasabada 19:00'dan itibaren. Kostüm giy, mini oyunlara katıl, geçit törenini izle.</p>
+        <div class="spooky-strip">
+          <span class="spooky-item">💀 Bonk the Skeleton</span>
+          <span class="spooky-item">🎯 Ring Toss</span>
+          <span class="spooky-item">🔍 Scavenger Hunt</span>
+          <span class="spooky-item">🐉 Ogoh-Ogoh Parade</span>
+          <span class="spooky-item">👻 Kostümler</span>
+        </div>
+        <div class="subtasks">
+          <label class="task"><input type="checkbox" data-task="spooky-costume" /> <span>Kostüm giy</span></label>
+          <label class="task"><input type="checkbox" data-task="spooky-bonk" /> <span>Bonk the Skeleton mini oyunu</span></label>
+          <label class="task"><input type="checkbox" data-task="spooky-ring" /> <span>Ring Toss</span></label>
+          <label class="task"><input type="checkbox" data-task="spooky-hunt" /> <span>Scavenger Hunt (çöpçü avı)</span></label>
+          <label class="task"><input type="checkbox" data-task="spooky-parade" /> <span>Ogoh-Ogoh geçit törenini izle</span></label>
+        </div>
+        <details class="wiki-detail">
+          <summary>📖 Wiki'den: Festival bilgisi</summary>
+          <p class="wiki-note">Fall 28, kasabada 19:00'dan itibaren. Festival başlamadan bir gün önce bildirim gelir; katılım zorunlu değildir.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <!-- Comments -->
+  <section class="comments">
+    <div class="wrap">
+      <h2 class="comments__title">💬 Tüm Yorumlar <span id="commentCount"></span></h2>
+      <div class="comments__list" id="commentsList"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Bu sayfa, <a href="https://www.youtube.com/watch?v=PDgkopX9vSA" target="_blank" rel="noopener">H1vezZz — Coral Island #6</a> videosunun yorumlarından üretilmiştir. Görseller ve bilgiler <a href="https://coralisland.wiki" target="_blank" rel="noopener">Coral Island Wiki</a>'den alınmıştır. exocad ile ilgisi yoktur. 😄</p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
